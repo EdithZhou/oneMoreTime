@@ -1,0 +1,81 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=gb2312">
+<LINK href="/free_shop/Public/css/admin.css" type="text/css" rel="stylesheet">
+</HEAD>
+<BODY>
+<TABLE cellSpacing=0 cellPadding=0 width="100%" align=center border=0>
+  <TR height=28>
+    <TD background=/free_shop/Public/images/title_bg1.jpg>当前位置: </TD></TR>
+  <TR>
+    <TD bgColor=#b1ceef height=1></TD></TR>
+  <TR height=20>
+    <TD background=/free_shop/Public/images/shadow_bg.jpg></TD></TR></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="90%" align=center border=0>
+  <TR height=100>
+    <TD align=middle width=100><IMG height=100 src="/free_shop/Public/images/admin_p.gif" 
+      width=90></TD>
+    <TD width=60>&nbsp;</TD>
+    <TD>
+      <TABLE height=100 cellSpacing=0 cellPadding=0 width="100%" border=0>
+        
+        <TR>
+          <TD>当前时间：<div id="box1" ></div></TD></TR>
+        <TR>
+          <TD style="FONT-WEIGHT: bold; FONT-SIZE: 16px">admin
+          </TD></TR>
+        <TR>
+          <TD>欢迎进入网站管理中心！</TD></TR></TABLE></TD></TR>
+  <TR>
+    <TD colSpan=3 height=10></TD></TR></TABLE>
+<TABLE cellSpacing=0 cellPadding=0 width="95%" align=center border=0>
+  <TR height=20>
+    <TD></TD></TR>
+  <TR height=22>
+    <TD style="PADDING-LEFT: 20px; FONT-WEIGHT: bold; COLOR: #ffffff" 
+    align=middle background=/free_shop/Public/images/title_bg2.jpg>您的相关信息</TD></TR>
+  <TR bgColor=#ecf4fc height=12>
+    <TD></TD></TR>
+  <TR height=20>
+    <TD></TD></TR></TABLE>
+<TABLE cellSpacing=0 cellPadding=2 width="95%" align=center border=0>
+  <TR>
+    <TD align=right width=100>登陆帐号：</TD>
+    <TD style="COLOR: #880000">123</TD></TR>
+  <TR>
+    <TD align=right>真实姓名：</TD>
+    <TD style="COLOR: #880000">admin</TD></TR>
+  <TR>
+    <TD align=right>注册时间：</TD>
+    <TD style="COLOR: #880000">2018/7/5</TD></TR>
+  
+    <TD align=right>上线时间：</TD>
+    <TD style="COLOR: #880000">2018/7/5</TD></TR>
+  <TR>
+    <TD align=right>IP地址：</TD>
+    <TD style="COLOR: #880000">8080</TD></TR>
+  <TR>
+    <TD align=right>当前身份：</TD>
+    <TD style="COLOR: #880000">admin</TD></TR>
+  <TR>
+    <TD align=right>网站开发者QQ:</TD>
+    <TD style="COLOR: #880000">782558113</TD></TR>
+ </TABLE>
+ 
+ <script src="/free_shop/Public/js/jquery.min.1.8.2.js" type="text/javascript"></script>
+<script>
+    setInterval(function(){
+      var date  = new  Date();
+      var year  = date.getFullYear();
+      var month   = date.getMonth()+1;
+      var day   = date.getDay()+2;
+      var hour  = date.getHours();
+      var minute  = date.getMinutes();
+      var second  = date.getSeconds();
+      var str = year+'年'+month+'月'+day+'日'+hour+'时'+minute+'分'+second+'秒';
+      $('#box1').html(str);
+    },1000);
+  </script>
+
+
+    </BODY></HTML>

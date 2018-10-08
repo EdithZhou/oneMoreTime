@@ -1,0 +1,61 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link href="/thinkphp_3.2.3_full/Public/css/main.css" rel="stylesheet" type="text/css" />
+<title>实名认证</title>
+</head>
+
+<body>
+<div id="header">
+ <div class="main">
+  <dl><a href="#"><img src="/thinkphp_3.2.3_full/Public/images/logo.png" /></a></dl>
+  <dt><a href="/thinkphp_3.2.3_full/index.php/Admin/Index"><img src="/thinkphp_3.2.3_full/Public/images/link.png" /></a></dt>
+ </div>
+</div>
+
+<div id="banner"></div>
+
+<div id="nav">
+ <div class="main">
+  <div class="li01"><a href="#"><img src="/thinkphp_3.2.3_full/Public/images/n_01.png" /></a></div>
+  <div class="li02"><a href="#" class="hover"><img src="/thinkphp_3.2.3_full/Public/images/n_02.png" /></a></div>
+ </div>
+</div>
+
+<div id="add">当前位置：实名认证</div>
+
+<div id="bott">
+ <div id="s_name">
+ 	
+  <p>您的手机号<?php echo ($info['terminal_phone']); ?>已验证X次，还可以验证X次</p>
+  <p>注：添加提示语"此卡已绑定手机，号码为'<?php echo ($info['terminal_phone']); ?>'"</p>
+  <span>尊敬的用户，您的实名资料我们已经收到，系统会在24小时内为您审核完毕，请耐心等待！</span>
+ </div>
+</div>
+
+<div class="clear"></div>
+
+<div id="footer">
+ <div class="main"><img src="/thinkphp_3.2.3_full/Public/images/pic_02.jpg" /></div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>
